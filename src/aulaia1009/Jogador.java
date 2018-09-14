@@ -13,14 +13,22 @@ public class Jogador {
     
        private int nome;
       // tabuleiro
+       
   
        //     escolheDado()
         //    escolhePosicai()
     
    public void LancaDado(Dado[] dados)
    {
-       
+       dados[0].rolar();
+       dados[0].exibeFaces();
        
    }
+   
+   
+   
+   
+   
+   
    }
 
