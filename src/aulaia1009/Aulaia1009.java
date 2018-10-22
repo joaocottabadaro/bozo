@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package aulaia1009;
-
+import java.util.Scanner;
 /**
  *
  * @author ice
@@ -15,7 +15,12 @@ public class Aulaia1009 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Scanner scan = new Scanner(System.in);
+        System.out.println("digite a quantidade de jogadores");
+        int jogadores = scan.nextInt(); 
+        Jogo a = new Jogo(jogadores);
+        a.Jogadores();
+        a.iniciarBozo();
     }
     
 }

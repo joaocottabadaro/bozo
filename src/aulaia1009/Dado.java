@@ -14,12 +14,14 @@ public class Dado {
    private int tam =5;
      int faces[] = new int[tam];
             
-            
-            
+     public void rolarPosicao(int num)
+     {
+         this.faces[num]=(int)((Math.random())*6+1);
+     }
            
  
                             
-    public void rolar()
+    public void rolarDado()
     {
         for(int i=0;i<5;i++)
             this.faces[i]=(int)((Math.random())*6+1);
@@ -30,6 +32,11 @@ public class Dado {
             System.out.println("dado "+ i +"="+ faces[i]);
     }
         
+    void trocarDado(int posicao)
+    {
+      this.faces[posicao]=(int)((Math.random())*6+1);
+      
     
+    }
     
 }
