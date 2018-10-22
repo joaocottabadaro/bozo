@@ -116,10 +116,7 @@ public class Tabuleiro {
               if(j==6){
                   pontosJogador+=60;
               k=60;
-              }
-              else
-                   System.out.println("nao teve pontos");
-              
+              }     
               System.out.println(k);
           
           
